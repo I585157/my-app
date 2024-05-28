@@ -1,22 +1,33 @@
 import logo from './logo.svg';
 import './App.css';
+import { Carousel} from '@ui5/webcomponents-react';
 
-function App() {
+function App() {;
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Sample React application with UI5-Webcomponents
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Carousel
+        id="Carousel"
+        arrowsPlacement="Content"
+        onNavigate={function _a(){}}
+      >
+        <img
+          alt="img-sample 1"
+          src="https://sap.github.io/ui5-webcomponents/images/sample1.jpg"
+        />
+        <img
+          alt="img-sample 2"
+          src="https://sap.github.io/ui5-webcomponents/images/sample2.jpg"
+        />
+        <img
+          alt="img-sample 3"
+          src="https://sap.github.io/ui5-webcomponents/images/sample3.jpg"
+        />
+      </Carousel>
       </header>
     </div>
   );
